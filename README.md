@@ -3,6 +3,8 @@
 
 Copiar el siguiente diseño web utilizando **HTML** y **CSS** de forma tal que la web se visualize correctamente en cualquier dispositivo (celular, tablet, laptop y monitor).
 
+![Web](https://user-images.githubusercontent.com/82593976/124944478-b8724980-dfe3-11eb-9b08-a34963085736.png)
+
 #### Puntos a considerar:
 
 El sitio debe ser **responsive**, priorizando el uso de **Flexbox** y debe tener una **input para busqueda de ciudades** como se visualiza en la imagen. Dicho input debe capturar el evento del teclado y realizar consultas a un API público de Clima (se puede utilizar cualquier API de clima las vista en la semana 12).
@@ -23,5 +25,9 @@ Se evaluará:
 * Correcta visualizacion del sitio en Github Pages.
 * Colaboración con los compañeros de clase para mejorar los conocimientos y avanzar como grupo.
 
+Enlace directo a [github pages](https://lucasdelmonte.github.io/Consultando_Clima/) para visualizar la página.
+
 <p align="center">Diseñado y Desarrollado por Lucas Delmonte - Estudiante de Ing. en Sistemas</p>
+
+
 

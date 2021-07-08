@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(214, 215, 218);
+    padding: 50px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.columna1{
+    width: 50%;
+    padding: 40px 45px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: rgb(252, 252, 252);
+}
+
+.columna2{
+    width: 50%;
+    padding: 40px 45px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(246, 246, 248);
+}
