@@ -1,7 +1,7 @@
 body{
     font-family: 'Rubik', sans-serif;
     background-color: rgb(214, 215, 218);
-    padding: 50px;
+    padding: 20px 40px;
 }
 
 .contenedor{
@@ -13,22 +13,22 @@ body{
     margin-right: auto;
 }
 
+/* INICIAN los estilos de la COLUMNA 1 */
+
 .columna1{
     width: 20%;
-    padding: 40px 45px;
+    padding: 30px 45px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     background-color: rgb(252, 252, 252);
-    /* background-color: yellow; */
 }
 
 .columna2{
     width: 80%;
-    padding: 40px 45px;
+    padding: 30px 45px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     background-color: rgb(246, 246, 248);
-    /* background-color: red; */
 }
 
 .cabecera{
@@ -38,7 +38,6 @@ body{
     flex-wrap: wrap;
     align-items: center;
     height: 60px;
-    /* background-color: blue; */
 }
 
 .cabecera img{
@@ -60,7 +59,7 @@ body{
     font-size: 20px;
     color: white;
     border-radius: 100px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     padding: 9px;
     margin-left: 5px;
     text-decoration: none;
@@ -70,7 +69,7 @@ input[type="text"]{
     border: 0;
     height: 20px;
     margin-left: 5px;
-    /* Color original background-color: rgb(246, 246, 248); */
+    color: rgb(0, 0, 0);
 }
 
 .grados p{
@@ -84,9 +83,22 @@ input[type="text"]{
     height: 30px;
 }
 
+.clima_hoy h2{
+    margin: 50px 0px;
+}
+
+.clima_hoy p{
+    margin: 20px 0px;
+}
+
 .clima_hoy img{
+    /* margin-top: 20px; */
     width: 100%;
 }
+
+/* FINALIZAN los estilos de la COLUMNA 1 */
+
+/* INICIAN los estilos de la COLUMNA 2 */
 
 .dias{
     display: flex;
@@ -97,17 +109,27 @@ input[type="text"]{
 }
 
 .dia{
-    background-color: wheat;
     width: 140px;
     border-radius: 10px;
     margin: 35px 5px 5px 5px;
     padding: 3px;
     text-align: center;
+    background-color: wheat;
 }
 
 .dia img{
     width: 90%;
     height: 90px;
+}
+
+.detalle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.detalle img{
+    margin: 0px 5px;
 }
 
 .temperaturas{
@@ -116,8 +138,8 @@ input[type="text"]{
     justify-content: center;
 }
 
-.destacado{
-    
+.destacado h2{
+    margin: 50px 0px 30px 0px;
 }
 
 .informacion{
@@ -125,7 +147,6 @@ input[type="text"]{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* background-color: violet; */
 }
 
 .informacion h3{
@@ -141,5 +162,7 @@ input[type="text"]{
     height: 200px;
     margin: 5px;
     border-radius: 10px;
-    background-color: rgb(252, 252, 252);
+    background-color: wheat;
 }
+
+/* FINALIZAN los estilos de la COLUMNA 2 */

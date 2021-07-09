@@ -13,11 +13,11 @@
 </head>
 <body>
     <div class="contenedor">
-        <div class="columna1">
+        <section class="columna1">
             <div class="cabecera">
                 <div class="buscador">
                     <img src="img/lupa_50px.png" alt="Lupa">
-                    <input type="text" name="buscar" id="buscar">
+                    <input type="text" name="buscar" id="buscar" placeholder="Search for places ...">
                 </div>
                 <div class="mira">
                     <img src="img/mira_24px.png" alt="Mira">
@@ -29,12 +29,12 @@
                     <p>12°C</p>
                 </div>
                 <h2>Monday, 16:00</h2>
-                <p>icono Mostly Cloudy</p>
-                <p>icono Rain - 30%</p>
+                    <p>Mostly Cloudy</p>
+                    <p>Rain - 30%</p>
                 <img src="img/rosario.jpg" alt="Rosario" width="90%" height="150px">
             </div>
-        </div>
-        <div class="columna2">
+        </section>
+        <section class="columna2">
             <div class="cabecera">
                 <div class="enlaces">
                     <a href="#">Today</a>
@@ -112,26 +112,38 @@
                     </div>
                     <div class="informacion_destacada">
                         <h3>Wind Status</h3>
-                        <p>icono WSW</p>
+                        <div class="detalle">
+                            <img src="img/viento_48px.png" alt="Viento" width="30px" height=" 30px">
+                            <p> WSW</p>
+                        </div>
                     </div>
                     <div class="informacion_destacada">
                         <h3>Sunrise & Sunset</h3>
                     </div>
                     <div class="informacion_destacada">
                         <h3>Humidity</h3>
-                        <p>Normal emoji</p>
+                        <div class="detalle">
+                            <p>Normal</p>
+                            <img src="img/normal_48px.png" alt="Normal" width="30px" height=" 30px">
+                        </div>
                     </div>
                     <div class="informacion_destacada">
                         <h3>Visibility</h3>
-                        <p>Average emoji</p>
+                        <div class="detalle">
+                            <p>Average</p>
+                            <img src="img/triste_48px.png" alt="Triste" width="30px" height=" 30px">
+                        </div>
                     </div>
                     <div class="informacion_destacada">
                         <h3>Air Quality</h3>
-                        <p>Unhealthy</p>
+                        <div class="detalle">
+                            <p>Unhealthy</p>
+                            <img src="img/mal_48px.png" alt="Mal" width="30px" height=" 30px">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <script src="javascript/app.js"></script>
 </body>
