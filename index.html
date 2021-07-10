@@ -17,7 +17,8 @@
             <div class="cabecera">
                 <div class="buscador">
                     <img src="img/lupa_50px.png" alt="Lupa">
-                    <input type="text" name="buscar" id="buscar" placeholder="Search for places ...">
+                    <input type="text" name="buscar" id="inputValor" placeholder="Search for places ...">
+                    <input type="submit" value="search" id="buscar" class="buscar">
                 </div>
                 <div class="mira">
                     <img src="img/mira_24px.png" alt="Mira">
@@ -26,12 +27,12 @@
             <div class="clima_hoy">
                 <img src="img/clima_hoy.png" alt="Clima de hoy">
                 <div class="grados">
-                    <p>12°C</p>
+                    <p id="grados_hoy">°C</p>
                 </div>
-                <h2>Monday, 16:00</h2>
-                    <p>Mostly Cloudy</p>
-                    <p>Rain - 30%</p>
-                <img src="img/rosario.jpg" alt="Rosario" width="90%" height="150px">
+                <h2 id="fecha_hoy">Monday, 16:00</h2>
+                <p id="clima_hoy">Mostly Cloudy</p>
+                <p>Rain - 30%</p>
+                <img src="img/rosario.jpg" alt="Rosario" width="90%" height="150px" style="border-radius: 20px;">
             </div>
         </section>
         <section class="columna2">
@@ -112,16 +113,20 @@
                     </div>
                     <div class="informacion_destacada">
                         <h3>Wind Status</h3>
+                        <p id="viento_hoy" style="font-size: 21px;">km/h</p>
                         <div class="detalle">
                             <img src="img/viento_48px.png" alt="Viento" width="30px" height=" 30px">
-                            <p> WSW</p>
+                            <p>WSW</p>
                         </div>
                     </div>
                     <div class="informacion_destacada">
                         <h3>Sunrise & Sunset</h3>
+                        <p id="amanecer_hoy" style="font-size: 21px;">AM</p>
+                        <p id="atardecer_hoy" style="font-size: 21px;">PM</p>
                     </div>
                     <div class="informacion_destacada">
                         <h3>Humidity</h3>
+                        <p id="humedad_hoy" style="font-size: 21px;">%</p>
                         <div class="detalle">
                             <p>Normal</p>
                             <img src="img/normal_48px.png" alt="Normal" width="30px" height=" 30px">
@@ -129,6 +134,7 @@
                     </div>
                     <div class="informacion_destacada">
                         <h3>Visibility</h3>
+                        <p id="visibilidad_hoy" style="font-size: 21px;">km</p>
                         <div class="detalle">
                             <p>Average</p>
                             <img src="img/triste_48px.png" alt="Triste" width="30px" height=" 30px">

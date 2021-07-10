@@ -20,7 +20,7 @@ body{
     padding: 30px 45px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(255, 255, 255);
 }
 
 .columna2{
@@ -67,9 +67,21 @@ body{
 
 input[type="text"]{
     border: 0;
-    height: 20px;
+    height: 22px;
     margin-left: 5px;
     color: rgb(0, 0, 0);
+}
+
+input[type="submit"]{
+    border: 0;
+    border-radius: 7px;
+    height: 28px;
+    padding: 3px 5px;
+    background-color: rgb(246, 246, 248);
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(255, 255, 255);
 }
 
 .grados p{
@@ -114,7 +126,7 @@ input[type="text"]{
     margin: 35px 5px 5px 5px;
     padding: 3px;
     text-align: center;
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
 }
 
 .dia img{
@@ -162,7 +174,7 @@ input[type="text"]{
     height: 200px;
     margin: 5px;
     border-radius: 10px;
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
 }
 
 /* FINALIZAN los estilos de la COLUMNA 2 */
