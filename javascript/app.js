@@ -29,7 +29,7 @@ boton.addEventListener('click', function(){
         amanecer.innerHTML = amanecerValor + ' AM';
         atardecer.innerHTML = atardecerValor + ' PM';
         humedad.innerHTML = humedadValor + '%';
-        visibilidad.innerHTML = visibilidadValor + ' km';
+        visibilidad.innerHTML = visibilidadValor + ' m';
         fecha.innerHTML = new Date(fechaValor);
     })
 

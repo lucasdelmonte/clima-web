@@ -7,7 +7,6 @@ body{
 .contenedor{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     border-radius: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -69,6 +68,7 @@ input[type="text"]{
     border: 0;
     height: 22px;
     margin-left: 5px;
+    margin-bottom: 10px;
     color: rgb(0, 0, 0);
 }
 
@@ -77,6 +77,7 @@ input[type="submit"]{
     border-radius: 7px;
     height: 28px;
     padding: 3px 5px;
+    margin-bottom: 5px;
     background-color: rgb(246, 246, 248);
 }
 
@@ -85,7 +86,7 @@ input[type="submit"]:hover{
 }
 
 .grados p{
-    font-size: 90px;
+    font-size: 70px;
     margin-bottom: 0px;
     margin-top: 20px;
 }
@@ -104,11 +105,59 @@ input[type="submit"]:hover{
 }
 
 .clima_hoy img{
-    /* margin-top: 20px; */
+    margin-top: 20px;
     width: 100%;
 }
 
 /* FINALIZAN los estilos de la COLUMNA 1 */
+
+@media screen and (max-width: 1200px){
+    .cabecera{
+        text-align: center;
+    }
+    .columna1{
+        width: 30%;
+    }
+    .columna2{
+        width: 70%;
+    }
+    input[type="text"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .buscador img{
+        display: none;
+    }
+    .mira{
+        display: none;
+    }
+    .grados p{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        flex-direction: column;
+        border-radius: 0px;
+    }
+    .columna1{
+        width: 80%;
+        border-radius: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .columna2{
+        width: 80%;
+        border-radius: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}
 
 /* INICIAN los estilos de la COLUMNA 2 */
 
@@ -178,3 +227,33 @@ input[type="submit"]:hover{
 }
 
 /* FINALIZAN los estilos de la COLUMNA 2 */
+
+@media screen and (max-width: 610px){
+    .dias{
+        flex-direction: column;
+        align-items: center;
+    }
+    .informacion{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .columna1{
+        width: 70%;
+    }
+    .columna2{
+        width: 70%;
+    }
+    #fahrenheit{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .informacion_destacada{
+        width: 150px;
+    }
+}
