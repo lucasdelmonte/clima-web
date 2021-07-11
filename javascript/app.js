@@ -9,7 +9,9 @@ var humedad = document.querySelector('#humedad_hoy');
 var visibilidad = document.querySelector('#visibilidad_hoy');
 var fecha = document.querySelector('#fecha_hoy');
 
-boton.addEventListener('click', function(){
+boton.addEventListener('click', climaHoy)
+
+function climaHoy(){
     fetch('http://api.openweathermap.org/data/2.5/forecast?q='+inputValor.value+'&units=metric&appid=1dfce91cad2e917bc5d3ca4b9ad60418')
     .then(response => response.json())
     .then(data => {
@@ -22,6 +24,8 @@ boton.addEventListener('click', function(){
         var humedadValor = data.list[0].main.humidity;
         var visibilidadValor = data.list[0].visibility;
         var fechaValor = data.list[0].dt;
+        var lat = data.city.coord.lat;
+        var lon = data.city.coord.lon;
 
         grados.innerHTML = gradosValor + '°C';
         clima.innerHTML = climaValor;
@@ -30,8 +34,24 @@ boton.addEventListener('click', function(){
         atardecer.innerHTML = atardecerValor + ' PM';
         humedad.innerHTML = humedadValor + '%';
         visibilidad.innerHTML = visibilidadValor + ' m';
-        fecha.innerHTML = new Date(fechaValor);
+        fecha.innerHTML = fechaValor;
+
+        climaFuturo(lat, lon);
     })
 
 .catch(error => alert("No existe la ciudad o no se encuentra registrado en la API"))
-}) 
+}
+
+function climaFuturo(lat, lon){
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+'&units=metric&appid=1dfce91cad2e917bc5d3ca4b9ad60418')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        data.daily.forEach(function(dayInfo, index) {
+            let gradoHoy = document.querySelector('#grados'+index);
+            let grado = (dayInfo.temp.day).toString(); 
+            gradoHoy.innerHTML = grado + '°C';
+        })
+    })
+}
+
