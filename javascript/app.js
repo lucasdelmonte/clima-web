@@ -46,7 +46,6 @@ function climaFuturo(lat, lon){
     fetch('https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+'&units=metric&appid=1dfce91cad2e917bc5d3ca4b9ad60418')
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         data.daily.forEach(function(dayInfo, index) {
             let gradoHoy = document.querySelector('#grados'+index);
             let grado = (dayInfo.temp.day).toString(); 
