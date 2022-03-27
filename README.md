@@ -25,7 +25,7 @@ Se evaluará:
 * Correcta visualizacion del sitio en Github Pages.
 * Colaboración con los compañeros de clase para mejorar los conocimientos y avanzar como grupo.
 
-Enlace directo a [github pages](https://lucasdelmonte.github.io/Consultando_Clima/) para visualizar la página.
+Enlace directo a [github pages](https://lucasdelmonte.github.io/clima-web/) para visualizar la página.
 
 <p align="center">Diseñado y Desarrollado por Lucas Delmonte - Estudiante de Ing. en Sistemas</p>
 
